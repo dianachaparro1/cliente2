@@ -1,0 +1,50 @@
+<app-navbar></app-navbar>
+<div class="row">
+    <div class="col-4">
+        <div class="card">
+            <div id="jugador1" class="card-body">
+                {{ usuario }}
+            </div>
+        </div>
+        <div id="puntaje" class="puntaje">
+            {{ puntaje }}
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card" style="margin-top: 100px;">
+            <div class="card-body">
+                <img id="palomita" src="https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787__340.png" alt="correcta">
+                <img id="equis" src="https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_960_720.png" alt="incorrecta">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="juego" class="row">
+    <div class="col-12">
+        <p style="color: #f6c90e; font-size: 20px;">Turno <i id="turno"></i></p>
+        <div><p id="puntos" style="color: #f6c90e; font-size: 20px;"></p></div>
+    </div>
+    <form class="col-8 offset-2">
+        <div class="form-group">
+            <h1>Pregunta:</h1>
+            <hr>
+            <input style="color: #f6c90e;" readonly class="form-control-plaintext" name="pregunta" type="text" id="pregunta" value="{{ pregunta?.pregunta }}">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-6">
+                <button class="btn btn-info" (click)="verificarRespuesta(pregunta.respuesta1)" id="respuesta1">{{ pregunta.respuesta1 }}</button>
+            </div>
+            <div class="form-group col-6">
+                <button class="btn btn-info" (click)="verificarRespuesta(pregunta.respuesta2)" id="respuesta2" for="">{{ pregunta.respuesta2 }}</button>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-6">
+                <button class="btn btn-info" (click)="verificarRespuesta(pregunta.respuesta3)" id="respuesta3" for="">{{ pregunta.respuesta3 }}</button>
+            </div>
+            <div class="form-group col-6">
+                <button class="btn btn-info" (click)="verificarRespuesta(pregunta.respuesta4)" id="respuesta4" for="">{{ pregunta.respuesta4 }}</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <a class="navbar-brand" [routerLink]="['']" routerLinkActive="router-link-active" >100 mexicanos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['']" routerLinkActive="router-link-active" ><span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+      <button *ngIf="logueado" class="btn btn-danger my-2 my-sm-0" type="submit" (click)="cerrarSesion()">Cerrar Sesión</button>
+    </form>
+</nav>
+<button [routerLink]="['/inicio']" routerLinkActive="router-link-active"  class="btn btn-success">Inicio</button>
+<button [routerLink]="['/registrar']" routerLinkActive="router-link-active"  class="btn btn-primary">Regisrar</button>
+<button [routerLink]="['/juego']" routerLinkActive="router-link-active"  class="btn btn-info">Juego</button>
+<button class="btn btn-warning">warning</button>
+<button class="btn btn-danger">danger</button>
+<button class="btn btn-dark">dark</button>

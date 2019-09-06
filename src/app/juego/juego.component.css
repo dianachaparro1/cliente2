@@ -1,0 +1,40 @@
+h1{
+  text-align: center !important;
+  color: #f6c90e !important;
+}
+
+label{
+  color: #f6c90e !important;
+}
+
+img{
+  height: 100px;
+  width: auto;
+}
+
+#pregunta{
+  font-weight: bold !important;
+  cursor: default;
+}
+
+#juego{
+  margin: 7%;
+  padding: 30px;
+  background-color: rgb(18, 18, 19);
+  border-style: dotted;
+  border-color: #f6c90e !important;
+  border-width: 20px !important;
+}
+
+.puntaje{
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: #f6c90e;
+  background-color: rgb(18, 18, 19);
+  border-style: dotted;
+  border-color: #f6c90e !important;
+  border-width: 10px !important;
+}

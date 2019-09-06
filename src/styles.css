@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: 'Quicksand', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap');
+}
+
+body{
+    background: rgb(247,247,247);
+    background: linear-gradient(158deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 100%);
+}
+
+:root {
+	--primary: #5edfff;
+	--secondary: #6c757d;
+	--success: #91b029;
+	--info: #75cac3;
+	--danger: #ef4b4b;
+	--light: #f7f7f7;
+    --dark: #584b42;
+    --waning: #f6c90e;
+}
+
+div{
+    font-family: Quicksand;
+}
+
+div.row{
+    margin-bottom: 30px;
+}
+
+table{
+    cursor: default;
+}
+
+.btn-success{
+    background: rgb(145,176,41);
+    background: linear-gradient(158deg, rgba(145,176,41,1) 0%, rgba(145,176,41,1) 100%);
+    border: none !important;
+}
+
+.btn-primary, .btn-primary:active{
+    background: rgb(94,223,255);
+    background: linear-gradient(158deg, rgba(94,223,255,1) 0%, rgba(94,223,255,1) 100%);
+    border: none !important;
+}
+
+.btn-dark{
+    background: rgb(88,75,66);
+    background: linear-gradient(158deg, rgba(88,75,66,1) 0%, rgba(88,75,66,1) 100%);
+    border: none !important;
+}
+
+.btn-info{
+    background: rgb(189,190,173);
+    background: linear-gradient(158deg, rgba(189,190,173,1) 0%, rgba(189,190,173,1) 100%);
+    border: none !important;
+}
+
+.btn-danger{
+    background: rgb(239,75,75);
+    background: linear-gradient(158deg, rgba(239,75,75,1) 0%, rgba(239,75,75,1) 100%);
+    color: white;
+    border: none !important;
+}
+
+.btn-warning{
+    background: rgb(246,201,14);
+    background: linear-gradient(158deg, rgba(246,201,14,1) 0%, rgba(246,201,14,1) 100%);
+    color: white !important;
+    border: none !important;
+}

@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="container" style="margin-top: 5%;">
+    <div class="row">
+        <form class="col-12">
+            <div class="form-group">
+              <label for="pregunta">Ingresa la pregunta</label>
+              <input [(ngModel)]="pregunta" name="pregunta" type="text" class="form-control" id="pregunta">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <label for="pregunta1">Respuesta 1 - 40pts</label>
+                    <input [(ngModel)]="respuesta1" name="respuesta1" type="text" class="form-control" id="respuesta1">
+                </div>
+                <div class="form-group col-6">
+                    <label for="pregunta2">Respuesta 2 - 35pts</label>
+                    <input [(ngModel)]="respuesta2" name="respuesta2" type="text" class="form-control" id="respuesta2">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <label for="pregunta3">Respuesta 3 - 15pts</label>
+                    <input [(ngModel)]="respuesta3" name="respuesta3" type="text" class="form-control" id="respuesta3">
+                </div>
+                <div class="form-group col-6">
+                    <label for="pregunta4">Respuesta 4 - 10pts</label>
+                    <input [(ngModel)]="respuesta4" name="respuesta4" type="text" class="form-control" id="respuesta4">
+                </div>
+            </div>
+            <hr>
+            <button (click)="registrarPregunta()" type="button" class="btn btn-primary btn-block">registrar</button>
+          </form>
+    </div>
+</div>
